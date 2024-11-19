@@ -1,0 +1,9 @@
+venv/
+.git/
+spotifykeys.json
+nasakey.txt
+.cache-*
+__pycache__/
+3D_CME.gif
+Interface1.png
+
