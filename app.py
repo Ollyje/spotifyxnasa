@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from spotifyxnasa import get_playlist
+from spotifyxnasa import get_playlist, get_songs
 # app is a variable representing 
 # our flask app
 # __name__ is a python reserved 

@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+    background-color: black;
+    color: orangered;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header styling */
+h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px orangered, 0 0 30px orangered;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin: 10px auto;
+    width: 80%;
+    text-shadow: 0 0 10px orangered;
+}
+
+/* Form styling */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid orangered;
+    border-radius: 12px;
+    width: 50%;
+    background: rgba(255, 69, 0, 0.1);
+    box-shadow: 0 0 20px orangered;
+}
+
+label {
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px orangered;
+}
+
+input[type="text"] {
+    font-size: 1rem;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: orangered;
+    outline: none;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: orangered;
+    color: black;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px orangered, 0 0 20px orangered;
+}
+
+input[type="submit"]:hover {
+    background: #ff4500;
+    color: white;
+}
+
+/* Spotify iframe styling */
+iframe {
+    margin: 20px auto;
+    border: 2px solid orangered;
+    border-radius: 12px;
+    box-shadow: 0 0 20px orangered;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

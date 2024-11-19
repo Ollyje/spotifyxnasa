@@ -9,9 +9,12 @@
 </head>
 <body>
 	<h1>Tune into the Universe!</h1>
+	{% for song in songs %}
+		<p>{{song}}</p>
+	{% endfor %}
 	<form method="POST">
-		<!-- <label>Year:</label> -->
-		<!-- <input name=req_year type="text" value={{year}}><br><br> -->
+		<label>Year:</label>
+		<input name=req_year type="text" value={{year}}><br><br>
 		<input type="submit" value="Submit!"><br><br>
 	</form>
 	<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{playlist_id}}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

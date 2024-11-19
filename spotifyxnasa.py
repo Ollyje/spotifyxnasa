@@ -70,14 +70,14 @@ token = util.prompt_for_user_token(username, scope, client_id=client_id,client_s
 sp = spotipy.Spotify(auth=token)
 
 # CHANGE WHAT YEAR AND GENRE IN THE FIRST LINE
-track_results = sp.search(q='year'+year, type='track', limit=30)
+track_results = sp.search(q='year:2024 genre:pop', type='track', limit=30)
 
 songs = []
 for track in track_results['tracks']['items']:
     songs.append(track['name'])
 
 def get_songs(year):
-    track_results = sp.search(q='year:2024 genre:pop', type='track', limit=30)
+    track_results = sp.search(q='year:'+year, type='track', limit=30)
 
     songs = []
     for track in track_results['tracks']['items']:
