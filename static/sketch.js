@@ -2,7 +2,7 @@ let planets = [];
 let sun;
 
 function setup() {
-  createCanvas(1920, 1080, WEBGL); // Set the renderer to WEBGL for 3D
+  createCanvas(windowWidth, windowHeight, WEBGL); // Use the full width and height of the window
   sun = new Planet(0, 0, 0, 60); // Sun in the center (not moving)
   for (let i = 0; i < 30; i++) {
     let radius = random(100, 500); // Random orbit radius for each planet
@@ -11,6 +11,11 @@ function setup() {
     planets.push(new PlanetOrbit(sun, radius, size, speed));
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight); // Adjust canvas size when the window is resized
+}
+
 
 function draw() {
   background(0); // Black background
